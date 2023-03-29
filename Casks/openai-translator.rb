@@ -11,7 +11,17 @@ cask "openai-translator" do
     homepage "https://github.com/yetone/openai-translator"
   
     app "OpenAI Translator.app"
-  
+    
+    postflight do
+        system_command '/usr/bin/xattr',
+                args: [
+                        '-d', 'com.apple.quarantine',
+                        "#{staged_path}/OpenAI\ Translator.app"
+                      ],
+                sudo: true
+   end
+
+
     zap trash: [
       "~/Library/Preferences/xyz.yetone.apps.openai-translator",
       "~/Library/Saved Application State/xyz.yetone.apps.openai-translator.savedState",
