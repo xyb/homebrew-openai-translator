@@ -1,11 +1,10 @@
-# AFutureD Openai-translator-tap
+# Openai-translator-tap
 
-## How do I install these formulae?
+This repo is used for install [openai-translator](https://github.com/yetone/openai-translator).
 
-`brew install afutured/openai-translator-tap/<formula>`
 
-Or `brew tap afutured/openai-translator-tap` and then `brew install <formula>`.
+## How do I install these formula?
 
-## Documentation
+`brew install afutured/openai-translator-tap/openai-translator`
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+Or `brew tap afutured/openai-translator-tap` and then `brew install openai-translator`.
